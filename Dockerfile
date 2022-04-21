@@ -1,5 +1,5 @@
 FROM alpine:3.15
-WORKDIR /dist
+WORKDIR /src
 COPY dist dist/
 COPY package.json .
 
