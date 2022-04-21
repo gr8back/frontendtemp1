@@ -5,9 +5,9 @@ var express = require('express');
 var path = require('path');
 
 var logger = require('morgan');
-
+// const path = require("path");
 var cookieParser = require('cookie-parser');
-
+// const dist = path.resolve(__dirname, "dist");
 var bodyParser = require('body-parser');
 
 require("@babel/register");
@@ -71,12 +71,14 @@ app.use(function (err, req, res, next) {
 });
 
 
-
-
-
-app.get('/', function(req, res) {
+app.get('/test', function(req, res) {
   res.render('index', {locals: {title: 'Welcome!'}});
 });
+
+
+// app.get('/', function(req, res) {
+//   res.render('index', {locals: {title: 'Welcome!'}});
+// });
 
 console.log("gonna run a server here");
 module.exports = app;
