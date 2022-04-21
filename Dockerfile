@@ -1,6 +1,6 @@
 FROM alpine:3.15
-
-COPY app.js dist/
+WORKDIR /dist
+COPY dist dist/
 COPY package.json .
 
 ENV PORT 9622
