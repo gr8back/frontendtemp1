@@ -8,7 +8,7 @@ phases:
     commands:
       - echo installing dependencies
       - npm i
-      - $(aws ecr get-login --no-include-email --region $AWS_DEFAULT_REGION)
+      - $(aws ecr get-login-password --region $AWS_DEFAULT_REGION)
   build:
     commands:
       - echo Testing
