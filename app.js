@@ -50,7 +50,7 @@ app.use(bodyParser.urlencoded({
 }));
 app.use(cookieParser());
 console.log("your dirname " + __dirname);
-app.use(express["static"](path.join(__dirname, 'public')));
+app.use(express["static"](path.join(__dirname, 'public')));  //copied static files
 app.use('/scripts', express.static(__dirname + '/node_modules/@glidejs/glide/dist/'));
 app.use('/', index);
 app.use('/users', users); // catch 404 and forward to error handler
