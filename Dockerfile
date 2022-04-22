@@ -2,7 +2,7 @@ FROM alpine:3.15
 
 COPY app.js dist/
 COPY package.json .
-
+RUN echo "$PWD"
 ENV PORT 9622
 EXPOSE 9622
 
