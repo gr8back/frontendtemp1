@@ -11,7 +11,8 @@
   "description": "",
   "mode": "development",
     "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "webpackstart": "node newoutput.js"
   },
   "dependencies": {
     "@babel/core": "^7.17.9",
