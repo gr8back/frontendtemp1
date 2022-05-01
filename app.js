@@ -30,12 +30,12 @@ var appInstance = app.listen(port, function () {
   console.log("'Server docker listening at: ".concat(appInstance.address().port));
 }); // view engine setup
 
-// app.set('views', path.join(__dirname, 'views'));
-// app.set('view engine', 'jsx');
+// dapp.set('views', path.join(__dirname, 'views'));
+// dapp.set('view engine', 'jsx');
 app.engine('html', require('ejs').renderFile);
 app.set('view engine', 'html');
-// app.engine('jsx', require('express-react-views').createEngine()); // uncomment after placing your favicon in /public
-//app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+// dapp.engine('jsx', require('express-react-views').createEngine()); // uncomment after placing your favicon in /public
+//dapp.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
 
 var accessLogStream = fs.createWriteStream(path.join(__dirname, 'access.log'), {
   flags: 'a'

@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>HTML Template with Carousels </title>
+    <script src="https://sdk.amazonaws.com/js/aws-sdk-2.1125.0.min.js"></script>
     <link
       type="text/css"
       href="stylesheets/css/font-awesome.css"
@@ -22,6 +23,7 @@
     <noscript>
       <link rel="stylesheet" type="text/css" href="css/styleNoJS.css" />
     </noscript>
+
   </head>
   <body>
     <div class="demo-1">
@@ -37,7 +39,7 @@
           >
             <div class="sl-slide-inner">
               <div class="deco" data-icon="H"></div>
-              <h2>A BBCCDFFFFFFDene placitooooooo</h2>
+              <h2>A BBCCDFFFFFFDene mmmmmmm</h2>
               <blockquote>
                 <p>
                   You have just dined, and however scrupulously the
@@ -850,5 +852,14 @@
         Page.init();
       });
     </script>
+          <script type="text/javascript">
+
+        // Initialize the Amazon Cognito credentials provider
+        AWS.config.region = 'us-east-2';
+        AWS.config.credentials = new AWS.CognitoIdentityCredentials({
+            IdentityPoolId: 'us-east-2:dc53c1ea-1976-4816-bcd0-7c5032059ea0',
+        });
+
+        </script>
   </body>
 </html>
