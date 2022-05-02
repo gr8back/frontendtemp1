@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="4e8ea426-0a66-46d3-af45-746a4231ef45" name="ECS Containers">
+        <fileTransfer accessType="SFTP" host="ec2-13-59-159-155.us-east-2.compute.amazonaws.com" port="22" sshConfigId="6496fe06-571f-4862-bbe2-7669d06624a1" sshConfig="AWS-ECS Containers" keyPair="true">
+          <advancedOptions>
+            <advancedOptions dataProtectionLevel="Private" keepAliveTimeout="0" passiveMode="true" shareSSLContext="true" />
+          </advancedOptions>
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>
