@@ -1,5 +1,4 @@
 FROM alpine:3.15
-FROM node:12
 COPY . /
 COPY package.json .
 RUN npx webpack
