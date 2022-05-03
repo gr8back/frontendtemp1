@@ -1,4 +1,4 @@
-FROM alpine:3.15
+FROM public.ecr.aws/docker/library/node:lts-slim
 COPY . /
 COPY package.json .
 RUN npx webpack
