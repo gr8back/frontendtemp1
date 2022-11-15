@@ -7,7 +7,7 @@
   "license": "ISC",
   "description": "",
   "mode": "development",
-    "scripts": {
+  "scripts": {
     "start": "node app.js",
     "webpackstart": "node newoutput.js"
   },
@@ -22,8 +22,9 @@
     "babel-plugin-css-modules-transform": "^1.6.2",
     "babel-plugin-styled-components": "^2.0.2",
     "cookie-parser": "^1.4.6",
-    "ejs": "^3.1.6",
+    "ejs": "^3.1.8",
     "express": "^4.17.2",
+    "minimatch": "^5.1.0",
     "morgan": "^1.10.0",
     "webpack-dev-server": "^4.8.1"
   },
